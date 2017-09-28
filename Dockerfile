@@ -2,8 +2,5 @@ FROM openshift/base-centos7
 MAINTAINER Ron Litzenberger - nearForm
 
 EXPOSE 3000
-
-ADD . /app
-WORKDIR /app
-RUN npm install
+COPY . /opt/app-root/src/
 CMD ["node", "server.js"]
