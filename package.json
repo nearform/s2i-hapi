@@ -1,0 +1,24 @@
+{
+  "name": "s2i-hapi",
+  "version": "1.0.0",
+  "description": "demo app used with s2i",
+  "main": "server.js",
+  "dependencies": {
+    "hapi": "^16.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nearform/s2i-hapi.git"
+  },
+  "author": "Ron Litzenberger <ron.litzenberger@gmail.com> (http://sixloop.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nearform/s2i-hapi/issues"
+  },
+  "homepage": "https://github.com/nearform/s2i-hapi#readme"
+}
