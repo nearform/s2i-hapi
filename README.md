@@ -24,10 +24,10 @@ Below are the steps to run a nodejs app on a speceifiac version of NodeJS (Binar
 cd centos7-s2i=nodejs
 
 # change image version and username based on Docker Hub account
-make NODE_VERSION="8.6.0" IMAGE_NAME="litzenberger/centos7-s2i-nodejs" IMAGE_TAG="8.6.0" build
+make NODE_VERSION="8.6.0" IMAGE_NAME="nearform/centos7-s2i-nodejs" IMAGE_TAG="8.6.0" build
 
 #publish to Docker
-make NODE_VERSION="8.6.0" IMAGE_NAME="litzenberger/cent0s7-s2i-nodejs" IMAGE_TAG="8.6.0" DOCKER_USER="" DOCKER_PASS="" publish
+make NODE_VERSION="8.6.0" IMAGE_NAME="nearform/cent0s7-s2i-nodejs" IMAGE_TAG="8.6.0" DOCKER_USER="" DOCKER_PASS="" publish
 
 
 #log into openshift as admin
@@ -35,7 +35,7 @@ oc login -u system:admin
 
 # create new app in Openshift
 
-oc new-app litzenberger/centos7-s2i-nodejs:8.6.0~https://github.com/nearform/s2i-hapi
+oc new-app nearform/centos7-s2i-nodejs:8.6.0~https://github.com/nearform/s2i-hapi
 
 oc logs -f bc/s2i-hapi
 
