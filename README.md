@@ -24,6 +24,8 @@ Below are the steps to run a nodejs app on a speceifiac version of NodeJS (Binar
 cd centos7-s2i=nodejs
 
 # change image version and username based on Docker Hub account
+# use version numbers found here: https://nodejs.org/dist/
+
 make NODE_VERSION="8.6.0" IMAGE_NAME="nearform/centos7-s2i-nodejs" IMAGE_TAG="8.6.0" build
 
 #publish to Docker
