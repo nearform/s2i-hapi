@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/nearform/s2i-hapi.git"
   },
-  "author": "Ron Litzenberger <ron.litzenberger@gmail.com> (http://sixloop.github.io/)",
+  "author": "Ron Litzenberger <ron.litzenberger@gmail.com> (http://github.com/litzenberger)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nearform/s2i-hapi/issues"
