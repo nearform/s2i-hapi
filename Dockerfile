@@ -1,1 +1,0 @@
-FROM nearform/centos7-s2i-nodejs:8.6.0
